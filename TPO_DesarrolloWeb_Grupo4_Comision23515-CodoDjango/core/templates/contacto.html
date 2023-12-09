@@ -1,0 +1,43 @@
+{% extends 'inserts/base.html' %}
+
+{% load static %}
+
+{% block title %} CONTACTO {% endblock %}
+
+{% block content %}
+
+<main>
+    <section class="sectionContacto">
+        <h1 class="tituloSection">Contacto</h1>
+        <p class="introSection">¡Empezá hoy! Contáctanos para iniciar tu viaje hacia un estilo de vida más saludable.
+        </p>
+        <div class="form-map">
+            <form class="form contactForm" id="contactForm">
+                <div class="inputContainer">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ingresá tu nombre">
+                </div>
+                <div class="inputContainer">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required placeholder="Ingresá tu apellido">
+                </div>
+                <div class="inputContainer">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                </div>
+                <div class="inputContainer">
+                    <label for="mensaje"></label>
+                    <textarea id="mensaje" name="mensaje" required placeholder="Dejanos tu mensaje..."></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.066850016401!2d-58.3815704!3d-34.6037389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1698077674953!5m2!1ses-419!2sar"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+</main>
+
+<script src="{% static 'js/formContacto.js' %}"></script>
+
+{% endblock %}

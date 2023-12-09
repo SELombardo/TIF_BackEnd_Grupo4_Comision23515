@@ -1,0 +1,43 @@
+{% extends 'inserts/base.html' %}
+
+{% load static %}
+
+{% block title %} ALUMNOS REGISTRADOS {% endblock %}
+
+{% block content %}
+
+<main>
+    <section class="sectionAlumnos">
+        <h1 class="tituloSection">ALUMNOS REGISTRADOS</h1>
+    </section>
+    {% if alumnos %}
+    <div class="tablaAlumnos">
+        <table class="table">
+            <thead class="tablaTitulos">
+                <td>Nombre</td>
+                <td>DNI</td>
+                <td>Telefono</td>
+                <td>Email</td>
+                <td>Accion</td>
+            </thead>
+            {% for alumno in alumnos %}
+            <tbody class="alumnosTable">
+                <tr>
+                    <td class="textoTabla">{{alumno.apellido}} {{ alumno.nombre}}</td>
+                    <td class="textoTabla">{{ alumno.dni}}</td>
+                    <td class="textoTabla">{{ alumno.telefono}}</td>
+                    <td class="textoTabla">{{ alumno.email}}</td>
+                    <td class="tdAccion"><a href="{% url 'eliminar_alumno' alumno.id %}" class=""><img src="{% static 'img/delete.png' %}" alt="" class="imgDelete"></a></td>
+                </tr>
+            </tbody>
+            {% endfor %}
+        </table>
+    </div>
+    <div class="sinAlumnos">
+    {% else %}
+    <h3 class="text-center text-white">No hay registros</h3>
+    {% endif %}
+    </div>
+</main>
+
+{% endblock %}

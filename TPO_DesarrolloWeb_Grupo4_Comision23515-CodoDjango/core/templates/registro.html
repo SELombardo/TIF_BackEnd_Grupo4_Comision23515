@@ -1,0 +1,33 @@
+{% extends 'inserts/base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% load static %}
+
+{% block title %} REGISTRO {% endblock %}
+
+{% block content %}
+
+<main>
+    <section class="sectionRegistro">
+        <h1 class="tituloSection">Registro</h1>
+        <p class="introSection">Unite a la comunidad hoy! Regístrate para obtener acceso exclusivo y alcanzar tus metas de bienestar en nuestro gimnasio.</p>
+
+        <form class="form regisForm" method="post">{% csrf_token %}
+            
+            {{ form.nombre | as_crispy_field }}
+        
+            {{ form.apellido | as_crispy_field }}
+        
+            {{ form.dni | as_crispy_field}}
+        
+            {{ form.email | as_crispy_field}}
+        
+            {{ form.telefono | as_crispy_field}}
+        
+            <button type="submit">Registrar</button>
+            
+    </section>
+</main>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/formulario.css' %}">
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="formulario">
+
+    <form action="" method="post">{% csrf_token %}
+        <h1>LOGIN</h1>
+        {% if messages %}
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        {% endif %}
+        {{ form }}
+        <br>
+        <button type="submit">Ingresar</button>
+    </form>
+</div>
+
+{% endblock %}

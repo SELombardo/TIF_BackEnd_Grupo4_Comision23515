@@ -1,0 +1,70 @@
+{% extends './inserts/base.html' %}
+
+{% block title %} HOME {% endblock %}
+
+{% load static %}
+
+{% block content %}
+
+<main>
+    <!-- HERO -->
+    <div id="hero">
+        <div class="caja-mensaje">
+            <h1 id="mensaje-container" class="mensajes">
+            </h1>
+            <img src="{% static 'img/gym1.png' %}" alt="" class="imagen-inicio">
+        </div>
+
+        <!-- ARTICULO -->
+
+        <article class="caja-article">
+            <div class="caja-chica">
+                <div class="caja-chica1">
+                    <h1>"Hazlo"</h1>
+                    <p>"Tu destino fitness definitivo: Descubre un mundo de energía, salud y transformación. ¡Únete
+                        a nosotros y esculpe tu mejor ersión!"</p>
+                </div>
+
+                <div class="caja-chica2">
+                    <h1>"Tu Mejor Versión"</h1>
+                    <p>¡Prepárate para alcanzar tu mejor versión en Codo Power Gym! Nuestro gimnasio de última
+                        generación te ofrece un ambiente
+                        motivador</p>
+                </div>
+
+                <div class="caja-chica3">
+                    <h1>"Transformación Total"</h1>
+                    <p>No se trata solo de hacer ejercicio, se trata de una transformación total.
+                        Nuestro enfoque integral combina
+                        entrenamiento personalizado</p>
+                </div>
+            </div>
+
+            <div class="caja-grande">
+                <div class="caja-grande1">
+                    <h1 class="titulo-caja-grande">Codo Power Gym</h1>
+                    <p>¡Prepárate para alcanzar tu mejor versión en Codo Power Gym! Nuestro gimnasio de última
+                        generación te ofrece un ambiente
+                        motivador, entrenadores expertos y equipos de vanguardia para ayudarte a alcanzar tus
+                        objetivos de fitness. ¡Maximiza tu
+                        potencial y descubre una vida más saludable</p>
+                    <p>No solo construimos músculos, sino que también elevamos tu energía y vitalidad. Nuestro
+                        gimnasio te brinda una
+                        experiencia de entrenamiento completa con una variedad de clases, desde yoga hasta
+                        entrenamiento de alta intensidad.
+                        ¡Únete a la familia PowerGym y recarga tu vida!</p>
+                    <p>No se trata solo de hacer ejercicio, se trata de una transformación total. Nuestro enfoque
+                        integral combina
+                        entrenamiento personalizado, nutrición y apoyo emocional para que alcances tus metas de
+                        manera sostenible. ¡Ven y
+                        descubre cómo FlexFit puede cambiar tu vida!</p>
+                </div>
+            </div>
+        </article>
+    </div>
+</main>
+
+<script src="{% static 'js/scriptinicio.js' %}"></script>
+
+{% endblock %}
+    

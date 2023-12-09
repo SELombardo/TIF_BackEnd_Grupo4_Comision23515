@@ -1,0 +1,38 @@
+[
+  {
+    "actividad": "Funcional",
+    "días": "Lunes y miércoles",
+    "horarios": "14:00",
+    "img": "static/img/actividades/funcional.jpg"
+  },
+  {
+    "actividad": "GAP",
+    "días": "Lunes y miércoles ",
+    "horarios": "18:00",
+    "img": "static/img/actividades/gap.jpg"
+  },
+  {
+    "actividad": "Musculación",
+    "días": "Martes y jueves",
+    "horarios": "14:00",
+    "img": "static/img/actividades/musculacion.jpg"
+  },
+  {
+    "actividad": "Spinning",
+    "días": "Martes y jueves",
+    "horarios": "18:00",
+    "img": "static/img/actividades/spinning.jpg"
+  },
+  {
+    "actividad": "Zumba",
+    "días": "Miércoles y viernes",
+    "horarios": "16:00",
+    "img": "/static/img/actividades/zumba.jpg"
+  },
+  {
+    "actividad": "Pilates",
+    "días": "Miércoles y viernes",
+    "horarios": "20:00",
+    "img": "static/img/actividades/pilates.jpg"
+  }
+]

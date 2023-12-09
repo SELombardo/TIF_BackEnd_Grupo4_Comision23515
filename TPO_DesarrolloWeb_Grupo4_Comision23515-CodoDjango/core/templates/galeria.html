@@ -1,0 +1,27 @@
+{% extends 'inserts/base.html' %}
+
+{% load static %}
+
+{% block title %} GALERIA {% endblock %}
+
+{% block content %}
+    <main>
+        <section class="sectionGalería">
+            <h1 class="tituloSection">Galería</h1>
+            <p class="introSection">Explora nuestras instalaciones y actividades en nuestra galería de imágenes</p>
+            <div class="Gallery">
+                <img class="cardGallery" src="{% static 'img/galeria/img1.jpeg' %}" alt="Encontrá tu fuerza">
+                <img class="cardGallery" src="{% static 'img/galeria/img2.jpg' %}" alt="Desarrollá mejor resistencia">
+                <img class="cardGallery" src="{% static 'img/galeria/img3.jpg' %}" alt="Alimentá tu disciplina">
+                <img class="cardGallery" src="{% static 'img/galeria/img4.jpg' %}" alt="Tomá descansos">
+                <img class="cardGallery" src="{% static 'img/galeria/img5.jpg' %}" alt="Acompañá con motivación">
+                <img class="cardGallery" src="{% static 'img/galeria/img6.jpg' %}" alt="Ponete a prueba">
+                <img class="cardGallery" src="{% static 'img/galeria/img7.jpg' %}" alt="Fortalecé tu voluntad">
+                <img class="cardGallery" src="{% static 'img/galeria/img8.jpg' %}" alt="Concentrate en tus metas">
+                <img class="cardGallery" src="{% static 'img/galeria/img9.jpg' %}" alt="Valorá el compromiso">
+            </div>
+        </section>
+    </main>
+{% endblock %}
+    
+    

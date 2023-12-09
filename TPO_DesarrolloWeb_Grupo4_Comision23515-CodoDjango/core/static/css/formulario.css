@@ -1,0 +1,80 @@
+body {
+    background-image: url(../img/gym1.png);
+    background-size: cover;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 100vh;
+    width: 250px;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #ccc;
+}
+
+h1 {
+    text-align: center;
+    color: #fff;
+    text-shadow: 3px 3px 3px #999,
+        3px 3px 3px #999,
+        3px 3px 3px #999;
+}
+
+label {
+    font-size: 20px;
+    text-shadow: 2px 2px 2px #000, 2px 2px 2px #000, 2px 2px 2px #000;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+button {
+    width: 50%;
+    margin: 10px ;
+    font-size: 20px;
+    background-color: #043430;
+    color: #fff;
+    padding: 5px;
+}
+
+/*  */
+@media (1px <=width <= 970px) { 
+
+    .formulario {
+        width: 80%;
+    }
+    h1 {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+    label {
+        font-size: 15px;
+        text-shadow: 2px 2px 2px #000, 2px 2px 2px #000, 2px 2px 2px #000;
+    }
+    input {
+        padding: 5px;
+        font-size: 15px;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    button {
+        font-size: 5px;
+        padding: 5px;
+    }
+
+}

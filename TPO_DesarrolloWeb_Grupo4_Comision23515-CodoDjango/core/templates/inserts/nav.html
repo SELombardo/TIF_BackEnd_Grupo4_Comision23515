@@ -1,0 +1,37 @@
+{% load static %}
+<!-- HEADER -->
+<header class="header">
+    <div class="caja-header">
+        <div class="caja-header-nav">
+
+            <div class="caja-logo">
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'img/logo4.png' %}" alt="Logo Codo Power Gym" class="img-logo">
+                </a>
+            </div>
+            <nav class="barra-nav">
+                <ul class="menu nav-links">
+                    <li><a href="{% url 'home' %}">Inicio</a></li>
+                    <li><a href="{% url 'actividades' %}">Actividades</a></li>
+                    <li><a href="{% url 'sobre_nosotros' %}">Sobre Nosotros</a></li>
+                    <li><a href="{% url 'galeria' %}">Galería</a></li>
+                    <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                    <li><a href="{% url 'registrar_alumno' %}">Registrar</a></li>
+                    <li><a href="{% url 'alumnos' %}">Alumnos</a></li>
+                </ul>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+        </div>
+        <div class="searchBox">
+            <form action="">
+                <input type="search " placeholder="Buscar..." class="input-search">
+                <button class="button-search"><i class="bi bi-search"></i></button>
+            </form>
+        </div>
+        
+    </div>
+</header>

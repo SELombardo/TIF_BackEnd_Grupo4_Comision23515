@@ -1,0 +1,91 @@
+{% extends 'inserts/base.html' %}
+
+{% load static %}
+
+{% block title %} SOBRE NOSOTROS{% endblock %}
+
+{% block content %}
+
+    <main>
+        <section class="sectionNosotros">
+            <h1 class="tituloSection">Sobre Nosotros</h1>
+            <p class="introSection">En Codo Power Gym, nuestra pasión es tu salud y bienestar. Descubrí como Codo Power Gym
+                se ha convertido en tu mejor opción en busca de un cuerpo más fuerte y una mente más saludable</p>
+    
+            <article class="articulo1">
+                <img class="imgArt1" src="{% static 'img/sobre nosotros/institucional1.jpg' %}"
+                    alt="foto de un referente de la institución">
+                <div class="textoArt1">
+                    <h2>QUIÉNES SOMOS?</h2>
+                    <p>Codo Power Gym es el gimnasio líder en la ciudad, dedicado a ayudar a personas de todas las edades y
+                        niveles de condición física a alcanzar sus objetivos de salud y bienestar. Nuestras instalaciones
+                        modernas y equipos de última generación hacen que sea el lugar perfecto para ponerse en forma.</p>
+                    <p>Ofrecemos programas de entrenamiento personalizado para ayudarte a alcanzar tus objetivos
+                        específicos, ya sea perder peso, ganar músculo o mejorar tu resistencia. Clases grupales
+                        motivadoras, dirigidas por instructores expertos. Evaluaciones de composición corporal y planes de
+                        nutrición disponibles. Horarios flexibles para adaptarse a tu estilo de vida ocupado. Programas de
+                        membresía asequibles y opciones de pago mensual.</p>
+                </div>
+            </article>
+        </section>
+        <section class="sectionEquipo">
+            <h2 class="tituloSection">NUESTRO EQUIPO</h2>
+            <p class="introSection"> Contamos con un equipo de entrenadores altamente calificados y amables que están
+                comprometidos en ayudarte a alcanzar tus metas. Están disponibles para ofrecer asesoramiento personalizado y
+                crear programas de entrenamiento adaptados a tus necesidades específicas. </p>
+            <div class="containerCoaches">
+                <div class="cardCoach">
+                    <img src="{% static 'img/sobre nosotros/coach1.png' %}" alt="foto ilustrativa instructor">
+                    <h3 class="nameCoach">Lucas Rodríguez</h3>
+                    <p>Entrenador de fitness con más de 10 años de experiencia en el mundo del culturismo y la nutrición.
+                    </p>
+                </div>
+                <div class="cardCoach">
+                    <img src="{% static 'img/sobre nosotros/coach2.png' %}" alt="foto ilustrativa instructor">
+                    <h3 class="nameCoach">Carla González</h3>
+                    <p>Instructora de pilates, yoga y meditación altamente cualificada</p>
+                </div>
+                <div class="cardCoach">
+                    <img src="{% static 'img/sobre nosotros/coach3.png' %}" alt="foto ilustrativa instructor">
+                    <h3 class="nameCoach">David Santos</h3>
+                    <p>Entrenador personal especializado en pérdida de peso y acondicionamiento físico</p>
+                </div>
+                <div class="cardCoach">
+                    <img src="{% static 'img/sobre nosotros/coach4.png' %}" alt="foto ilustrativa instructor">
+                    <h3 class="nameCoach">Laura Martínez</h3>
+                    <p>Experta en ejercicios de alta intensidad y entrenamiento en grupo</p>
+                </div>
+            </div>
+        </section>
+        <section class="sectionNum">
+            <div class="numBox">
+                <span class="num">20</span>
+                <h3>Máquinas</h3>
+                <p>Disponemos de la mejor técnología en maquinaria para tu rutina</p>
+            </div>
+            <div class="numBox">
+                <span class="num">250</span>
+                <h3>Metros cuadrados</h3>
+                <p>Nuestro amplio Gimnasio cuenta con áreas especificas para que desarrolles tus actividades con el máximo
+                    confort.</p>
+            </div>
+            <div class="numBox">
+                <span class="num">10</span>
+                <h3>Instructores</h3>
+                <p>Tenemos a los mejores instructores quienes te brindarán atención personalizada</p>
+            </div>
+            <div class="numBox">
+                <span class="num">6</span>
+                <h3>Actividades</h3>
+                <p>Contamos con un aplio abanico de actividades.</p>
+            </div>
+            <div class="numBox">
+                <span class="num">7</span>
+                <h3>Días a la semana</h3>
+                <p>Horarios de atención todos los días, para que puedas alcanzar tus metas.</p>
+            </div>
+        </section>
+    </main>
+    
+{% endblock content %}
+    
